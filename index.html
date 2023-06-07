@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <!--===Nav-bar=====-->
+
+    <div class="navbar">
+        <ul class="nav-list">
+            <li><b>TIME</b></li>
+            <li>unix clock</li>
+            <li>Converter</li>
+        </ul>
+    </div>
+    <!--===Slection=====-->
+
+    <div class="select-container">
+        <div class="date-form">
+            <span class="s-btn" id="dd" onclick="dd()">DD/MM/YYYY</span>
+            <span class="s-btn" id="mm" onclick="mm()">MM/DD/YYYY</span>
+         </div>
+         <div class="time-form">
+            <span class="s-btn" id="twenty" onclick="twenty()">24 Hr</span>
+            <span class="s-btn" id="twelve" onclick="twelve()">12 Hr</span>
+         </div>
+    </div>
+    <!--===main-container=====-->
+
+    <div class="main-container">
+      <h2 id="heading">GMT</h2>
+      <div class="datee">
+        <span class="time" id="hour">0</span>
+        <span class="time">:</span>
+        <span class="time" id="min">00</span>
+        <span class="time">:</span>
+        <span class="time" id="sec">00</span>
+        <span class="time" id="pm">AM</span>
+      </div>
+    </div>
+   <!--===claender=====-->
+   <div class="cal-container">
+    <div class="datee" id="ddd">
+      <span class="cal day">Monday</span>
+      <span class="coma">,</span>
+      <span class="cal month">june  </span>
+      <span class="cal date">5 </span>
+      <span class="coma">,</span>
+      <span class="cal year">2023</span>
+    </div>
+    <div class="datee" id="mmm">
+        <span class="cal month">june  </span>
+        <span class="cal date">5 </span>
+        <span class="coma">,</span>
+        <span class="cal day">Monday</span>
+        <span class="coma">,</span>
+        <span class="cal year">2023</span>
+      </div>
+  </div>
+  <!--===claender=====-->
+  <div class="world-container">
+   <span class="w-btn" id="india" onclick="india()">
+    India <br> <span class="diff"> <span  id="indh"> +5</span>:<span id="indm">30</span></span>
+   </span>
+   <span class="w-btn" id="china" onclick="china()">
+    China <br> <span  class="diff"> <span  id="chinh"> +8</span>:<span id="chinm">00</span></span>
+   </span>
+   <span class="w-btn" id="italy" onclick="itly()">
+    Italy <br> <span  class="diff"> <span  id="ityh"> +2</span>:<span id="itym">00</span></span>
+   </span>
+   <span class="w-btn" id="usa" onclick="usa()">
+    USA <br> <span  class="diff"> <span  id="ush"> -5</span>:<span id="usm">00</span></span>
+   </span>
+  </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
